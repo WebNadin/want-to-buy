@@ -1,11 +1,12 @@
 import React from 'react';
+import './footer.scss';
 
-const Header = () => {
+const Footer = () => {
   return (
     <div className="header">
-      I'm Header
+      I'm Footer
     </div>
   );
 };
 
-export default Header;
+export default Footer;
