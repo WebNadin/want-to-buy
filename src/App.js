@@ -3,9 +3,9 @@ import React from 'react';
 import './app.scss';
 
 // Imported Components
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Main from './components/Main';
+import Header from './app/Header/Header';
+import Footer from './app/Footer/Footer';
+import Main from './app/Main/Main';
 
 function App() {
   return (
