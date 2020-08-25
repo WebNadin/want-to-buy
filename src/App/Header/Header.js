@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../images/logo.png';
-import searchIcon from '../../images/search.png';
-import shoppingCartIcon from '../../images/shopping-cart.png';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import SearchIcon from '@material-ui/icons/Search';
 import './header.scss';
 
 const Header = () => {
@@ -14,12 +14,12 @@ const Header = () => {
             <form>
               <input className="search__input" type="text" placeholder="я ищу..."></input>
               <button type="submit">
-                 <img className="search__icon" src={searchIcon} alt="magnifier "/>
+                <SearchIcon style={{ color: '#000000' }}/>
               </button>
             </form>
           </div>
-          <div className="cart">
-             <img className="cart__icon" src={shoppingCartIcon} alt="shopping-cart"/>
+          <div className="search__cart cart">
+            <AddShoppingCartIcon style={{ color: '#000000' }}/>
           </div>
         </div>
       </div>
