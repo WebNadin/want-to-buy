@@ -2,7 +2,29 @@ import React from 'react';
 import logo from '../../images/logo.png';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
+import NavLinks from '../../components/NavLinks';
 import './header.scss';
+
+
+const links = [
+  {
+    "href": "/",
+    "title": "travel bags"
+  },
+  {
+    "href": "/",
+    "title": "accessories"
+  },
+  {
+    "href": "/",
+    "title": "books"
+  },
+  {
+    "href": "/",
+    "title": "maps"
+  }
+];
+
 
 const Header = () => {
   return (
@@ -24,10 +46,7 @@ const Header = () => {
         </div>
       </div>
       <nav className="header__nav nav">
-        <a className="nav__link" href="/">travel bags</a>
-        <a className="nav__link" href="/">accessories</a>
-        <a className="nav__link" href="/">books</a>
-        <a className="nav__link" href="/">maps</a>
+        <NavLinks links={links}/>
       </nav>
     </header>
   );

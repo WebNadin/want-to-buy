@@ -1,0 +1,3 @@
+export const FETCHED_lINKS = 'NAV/FETCHED_lINKS';
+export const SHOW_LOADER = 'APP/SHOW_LOADER';
+export const HIDE_LOADER = 'APP/HIDE_LOADER';
